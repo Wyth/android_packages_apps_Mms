@@ -130,12 +130,17 @@
        <CheckBoxPreference android:key="pref_key_vibrate"
             android:title="@string/pref_title_notification_vibrateWhen"
             android:dependency="pref_key_enable_notifications"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <com.android.mms.preferences.CustomVibrateListPreference
             android:layout="?android:attr/preferenceLayoutChild"
             android:key="pref_key_mms_notification_vibrate_pattern"
+<<<<<<< HEAD
+            android:defaultValue="5"
+=======
+            android:dependency="pref_key_vibrate"
             android:defaultValue=""
+>>>>>>> 02eaca9006cb4216c453c6ed3749690801b84bc6
             android:title="@string/pref_title_mms_notification_vibrate_pattern"
             android:summary="@string/pref_summary_mms_notification_vibrate_pattern"
             android:entries="@array/pref_mms_notification_vibrate_pattern_entries"
@@ -157,14 +162,14 @@
             android:key="pref_dark_theme"
             android:title="@string/pref_dark_theme_title"
             android:summary="@string/pref_dark_theme_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <CheckBoxPreference
             android:key="pref_key_quickmessage"
             android:title="@string/pref_quickmessage_title"
             android:dependency="pref_key_enable_notifications"
             android:summary="@string/pref_quickmessage_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <CheckBoxPreference
             android:key="pref_key_qm_lockscreen"
@@ -172,7 +177,7 @@
             android:summary="@string/pref_wake_unlock_summary"
             android:layout="?android:attr/preferenceLayoutChild"
             android:dependency="pref_key_quickmessage"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <CheckBoxPreference
             android:key="pref_key_close_all"
